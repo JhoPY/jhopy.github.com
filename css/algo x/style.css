@@ -107,10 +107,6 @@ body{
 
 @media (min-width:400px){
 
-    body{
-        overflow: hidden;
-    }
-
     .container-title{
         text-align: center;
         font-size: 40px;
