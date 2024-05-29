@@ -98,7 +98,7 @@ body{
     border-radius: 30px;
 }
 
-@media (max-width:320px){
+@media (max-width:400px){
 
     .container-title{
         text-align: center;
@@ -106,7 +106,7 @@ body{
     }
 
     .insta, .tik, .whats{
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 }
