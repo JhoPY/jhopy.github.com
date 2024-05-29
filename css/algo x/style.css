@@ -55,7 +55,7 @@ body{
     color: white;
     background-color: black;
     margin: 10px 0; /* Añadir margen vertical para separar los enlaces */
-    overflow: hidden; /* Oculta el contenido desbordado */
+    overflow: hidden;
     word-wrap: break-word; /* Corta las palabras largas para ajustarlas al ancho */
     text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
     border-radius: 30px;
@@ -87,10 +87,6 @@ body{
 }
 
 @media (max-width:400px){
-
-    body{
-        overflow: hidden;
-    }
 
     .container-title{
         text-align: center;
@@ -129,8 +125,8 @@ body{
     }
 
     .insta, .tik, .whats{
-        width: 400px;
-        height: 400px;
+        width: 90%;
+        height: auto;
         border-radius: 29px;
     }
 }
