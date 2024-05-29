@@ -14,7 +14,11 @@ body{
 }
 
 .container{
-    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
     background-color: transparent;
     width: 80%;
     height: auto;
@@ -23,7 +27,7 @@ body{
 .container-title{
     text-align: center;
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     color: rgb(237, 141, 16);
     font-family: "Merriweather", serif;
@@ -42,7 +46,7 @@ body{
     display: flex;
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
-    padding: 50px;
+    padding: 60px;
     font-size: 26px;
     text-align: center;
     width: 80%; 
@@ -96,3 +100,34 @@ body{
         border-radius: 29px;
     }
 }
+
+@media (min-width:400px){
+
+    .container-title{
+        text-align: center;
+        font-size: 40px;
+        color: black;
+    }
+
+    .insta, .tik, .whats{
+        width: 200px;
+        height: 200px;
+        border-radius: 29px;
+    }
+}
+
+@media (min-width:467px){
+
+    .container-title{
+        text-align: center;
+        font-size: 40px;
+        color: black;
+    }
+
+    .insta, .tik, .whats{
+        width: 400px;
+        height: 400px;
+        border-radius: 29px;
+    }
+}
+
