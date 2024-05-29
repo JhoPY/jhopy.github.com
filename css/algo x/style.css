@@ -97,3 +97,16 @@ body{
     object-fit: cover;
     border-radius: 30px;
 }
+
+@media (max-width:320px){
+
+    .container-title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .insta, .tik, .whats{
+        width: 100px;
+        height: 100px;
+    }
+}
