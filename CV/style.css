@@ -1,0 +1,20 @@
+.link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+@media (max-width:500px){
+    .link a{
+        width: 400px;
+        height: 400px;
+        te
+    }
+}
