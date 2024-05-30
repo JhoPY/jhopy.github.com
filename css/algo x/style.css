@@ -18,7 +18,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 40px auto;
     background-color: transparent;
     width: 80%;
     height: auto;
@@ -27,7 +27,7 @@ body{
 .container-title{
     text-align: center;
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     color: black;
     font-family: "Merriweather", serif;
@@ -59,6 +59,14 @@ body{
     word-wrap: break-word; /* Corta las palabras largas para ajustarlas al ancho */
     text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
     border-radius: 30px;
+}
+
+.cv{
+    width: 90%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    object-fit: cover;
 }
 
 .insta{
@@ -94,7 +102,7 @@ body{
         color: black;
     }
 
-    .insta, .tik, .whats{
+    .insta, .tik, .whats, .cv{
         width: 200px;
         height: 200px;
         border-radius: 29px;
@@ -109,7 +117,7 @@ body{
         color: black;
     }
 
-    .insta, .tik, .whats{
+    .insta, .tik, .whats, .cv{
         width: 200px;
         height: 200px;
         border-radius: 29px;
@@ -124,7 +132,7 @@ body{
         color: black;
     }
 
-    .insta, .tik, .whats{
+    .insta, .tik, .whats, .cv{
         width: 90%;
         height: auto;
         border-radius: 29px;
