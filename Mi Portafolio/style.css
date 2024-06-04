@@ -239,7 +239,7 @@ body{
 
 .Galery:hover{
     border: 1px solid orange;
-    transform: rotate(-3deg);
+    transform: scale(1.5);
 }
 
 .pie{
@@ -308,7 +308,7 @@ body{
 
 .Galery_1:hover{
     border: 1px solid orange;
-    transform: rotate(-3deg);
+    transform: scale(1.5);
 }
 
 .proyectos__pie{
@@ -369,7 +369,7 @@ body{
 
 .social__link a:hover{
     color: orange;
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 
@@ -550,12 +550,13 @@ body{
 
 @media only screen and (max-width: 392px) {
     .nav__list {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: start;
+        align-items: start;
+        justify-content:space-around;
         text-align: center;
-        font-size: 10px; /* Reducir el tamaño de la fuente del menú de navegación */
+        font-size: 9px; /* Reducir el tamaño de la fuente del menú de navegación */
     }
 
     .nav__list a{
@@ -563,11 +564,7 @@ body{
     }
 
     .text__nav h2 {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: start;
-       font-size: 8px;
+        display: none;
     }
 }
 
