@@ -6,6 +6,7 @@
 body{
     font-family: arial;
     background-color: brown;
+    overflow:visible;
 }
 
 
@@ -70,7 +71,7 @@ body{
     align-items: center;
     padding: 2em;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-image: url(fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,10 +122,11 @@ body{
 
 .sobre__mi{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     padding: 20px 0;
     background-image: url(sobremi3.jpg);
     background-repeat: no-repeat;
@@ -135,9 +137,11 @@ body{
 
 .sobre__mi--container{
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .sobre__mi--title{
+    text-align: center;
     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
     text-transform: uppercase;
     font-size: 3.5em;
@@ -146,19 +150,21 @@ body{
 
 .sobre__mi--paragraph{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: start;
-    width: 50%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
     line-height: 1.5;
 }
 
 .estudios{
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     color: white;
     background-image: url(estudio.jpg);
     background-repeat: no-repeat;
@@ -167,42 +173,52 @@ body{
 }
 
 .estudios__title{
+    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
     max-width: 50%;
     /*margin-left: 20px;*/
     font-size: 3.5em;
-    margin-right: 25%;
+    /*margin-right: 25%;*/
 }
 
 .estudios__container{
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 .estudios__list{
-    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    /*margin-right: 25%;*/
     font-size: 1.5em;
 }
 
 .certificados{
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-image: url(certificado.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px 0;
 }
 
 .imagenes{
-    width: 50%;
+    margin-top: 50px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content:start;
 }
 
 .certificados__title{
-    width: 50%;
+    width: 100%;
     text-transform: uppercase;
     color: white;
     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
@@ -237,30 +253,46 @@ body{
 
 .proyectos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 500px;
     padding: 20px 0;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    width: 100%;
+    height: 100vh;
     background-image: url(programacion.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .proyectos__title{
-    width: 50%;
+    width: 100%;
     text-transform: uppercase;
     color: white;
     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
     text-align: center;
     font-size: 3.5em;
+    /*width: 50%;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-align: center;
+    font-size: 3.5em;*/
 }
 
 .imagenes_1{
-    width: 50%;
+    width: 90%;
     display: flex;
-    flex-direction:column;
-    justify-content:start;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 50px;
+    /*width: 50%;
+    display: flex;
+    flex-direction:row;
+    justify-content: start;*/
 }
 
 .Galery_1{
@@ -316,6 +348,7 @@ body{
 }
 
 .footer__links h3{
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
     font-size: 3.5em;
     text-transform: uppercase;
     text-align: center;
@@ -329,6 +362,7 @@ body{
     display: inline-block;
     margin: 20px 0;
     color: white;
+    text-shadow: 1px 2px 2px black, 0 0 25px green, 0 0 5px green;
     font-size: 2.4em;
     margin-right: 20px;
 }
@@ -339,7 +373,7 @@ body{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
     body{
         width: 100%;
     }
@@ -350,7 +384,7 @@ body{
 
     .nav__list {
         text-align: center;
-        font-size: 10px; /* Reducir el tamaño de la fuente del menú de navegación */
+        font-size: 9px; /* Reducir el tamaño de la fuente del menú de navegación */
     }
 
     .text__nav h2 {
@@ -359,7 +393,7 @@ body{
     }
 
     .section__presentacion {
-        height: 500px; /* Ajustar la altura de la sección de presentación */
+        height: 100vh; /* Ajustar la altura de la sección de presentación */
     }
 
     .presentacion__content {
@@ -388,12 +422,18 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         padding: 20px 0;
-        height: auto; /* Establecer la altura automática para la sección "Sobre mí" */
+        width: 100%;
+        height: 100vh; /* Establecer la altura automática para la sección "Sobre mí" */
     }
 
     .sobre__mi--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
         margin-left: 0; /* Ajustar el margen izquierdo del contenedor "Sobre mí" */
     }
 
@@ -404,8 +444,9 @@ body{
     }
 
     .sobre__mi--paragraph{
+        font-size: 11px;
         width: 100%;
-        margin: 0;
+        margin: 0 10px;
     }
 
     .estudios{
@@ -413,7 +454,7 @@ body{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: auto;
+        height: 100vh;
     }
 
     .estudios__container{
@@ -424,8 +465,10 @@ body{
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-repeat: no-repeat;
+        max-width: 1200px;
         width: 100%;
-        height: auto; /* Establecer la altura automática para las secciones "Estudios" y "Proyectos" */
+        height: 100vh; /* Establecer la altura automática para las secciones "Estudios" y "Proyectos" */
     }
 
     .estudios__title{
@@ -504,6 +547,30 @@ body{
         margin: 10px; /* Reducir el margen de los enlaces sociales */
     }
 }
+
+@media only screen and (max-width: 392px) {
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+        font-size: 10px; /* Reducir el tamaño de la fuente del menú de navegación */
+    }
+
+    .nav__list a{
+        color: rgb(214, 174, 27);
+    }
+
+    .text__nav h2 {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: start;
+       font-size: 8px;
+    }
+}
+
 
 
 
