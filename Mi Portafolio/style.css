@@ -363,7 +363,12 @@ body{
     }
 
     .presentacion__content {
+        /*font-size: 10px;*/
         max-width: 80%; /* Reducir el ancho máximo del contenido de presentación */
+    }
+
+    .presentacion__content h1{
+       font-size: 2em;
     }
 
     .presentacion__img {
@@ -372,9 +377,9 @@ body{
     }
 
     .btn__presentacion {
-        width: 200px; /* Reducir el ancho del botón de presentación */
+        width: 100%; /* Reducir el ancho del botón de presentación */
         height: 40px; /* Reducir la altura del botón de presentación */
-        font-size: 16px; /* Reducir el tamaño de la fuente del botón de presentación */
+        font-size: 1px; /* Reducir el tamaño de la fuente del botón de presentación */
         margin-top: 10px; /* Reducir el margen superior del botón de presentación */
     }
 
@@ -499,5 +504,6 @@ body{
         margin: 10px; /* Reducir el margen de los enlaces sociales */
     }
 }
+
 
 
