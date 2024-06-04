@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    background-color: brown;
+}
+
+
+
+.section__nav{
+     background-image: black;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     height: 90px;
+     border-bottom: 2px solid white;
+     position: fixed;
+}
+
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+}
+
+.nav__list li{
+    padding-right: 20px;
+}
+
+.nav__list li:hover{
+    padding-right: 20px;
+    transform: scale(1.2);
+}
+
+.nav__list li:last-child{
+    margin-right: 0px;
+}
+
+.nav__list a{
+    text-decoration: none;
+    color: red;
+}
+
+.nav__list a:hover{
+    color: rgb(255, 206, 11);
+}
+
+.text__nav{
+    margin: 0;
+    font-family: cursive;
+    text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+}
+.text__nav h2{
+    color: red;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.section__presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    height: 700px;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+}
+
+.presentacion__content{
+    max-width: 50%;
+}
+
+.presentacion__title{
+    text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.presentacion__img{
+    max-width: 50%;
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.presentacion__paragraph{
+    margin-bottom: 0.5em;
+}
+
+.btn__presentacion{
+    cursor: pointer;
+    color: white;
+    background: red;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn__presentacion--a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.sobre__mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    padding: 20px 0;
+    background-image: url(sobremi3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.sobre__mi--container{
+    margin-left: 50px;
+}
+
+.sobre__mi--title{
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.sobre__mi--paragraph{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: start;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.estudios{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-image: url(estudio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.estudios__title{
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    max-width: 50%;
+    /*margin-left: 20px;*/
+    font-size: 3.5em;
+    margin-right: 25%;
+}
+
+.estudios__container{
+    max-width: 100%;
+}
+
+.estudios__list{
+    margin-right: 25%;
+    font-size: 1.5em;
+}
+
+.certificados{
+    width: 100%;
+    height: 500px;
+    background-image: url(certificado.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.imagenes{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+}
+
+.certificados__title{
+    width: 50%;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.Galery{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+    width: 350px;
+}
+
+.Galery img{
+    width: 100%;
+    height: auto;
+}
+
+.Galery:hover{
+    border: 1px solid orange;
+    transform: rotate(-3deg);
+}
+
+.pie{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    padding: 10px;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 20px 0;
+    background-image: url(programacion.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.proyectos__title{
+    width: 50%;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.imagenes_1{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+}
+
+.Galery_1{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+    width: 350px;
+}
+
+.Galery_1 img{
+    width: 100%;
+    height: auto;
+}
+
+.Galery_1:hover{
+    border: 1px solid orange;
+    transform: rotate(-3deg);
+}
+
+.proyectos__pie{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.contacto{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    padding: 80px 0;
+    margin: 0;
+    background-color: #242628;
+    color: white;
+}
+
+.container__footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links{
+}
+
+.footer__links h3{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.social__link{
+    text-align: center;
+}
+
+.social__link a{
+    display: inline-block;
+    margin: 20px 0;
+    color: white;
+    font-size: 2.4em;
+    margin-right: 20px;
+}
+
+.social__link a:hover{
+    color: orange;
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    .section__nav {
+        height: 49px; /* Reducir la altura de la barra de navegación */
+    }
+
+    .nav__list {
+        text-align: center;
+        font-size: 10px; /* Reducir el tamaño de la fuente del menú de navegación */
+    }
+
+    .text__nav h2 {
+        text-align: center;
+        font-size: 14px; /* Reducir el tamaño de la fuente del título de navegación */
+    }
+
+    .section__presentacion {
+        height: 500px; /* Ajustar la altura de la sección de presentación */
+    }
+
+    .presentacion__content {
+        max-width: 80%; /* Reducir el ancho máximo del contenido de presentación */
+    }
+
+    .presentacion__img {
+        max-width: 40%; /* Reducir el tamaño de la imagen de presentación */
+        margin-right: 10px; /* Reducir el margen derecho de la imagen de presentación */
+    }
+
+    .btn__presentacion {
+        width: 200px; /* Reducir el ancho del botón de presentación */
+        height: 40px; /* Reducir la altura del botón de presentación */
+        font-size: 16px; /* Reducir el tamaño de la fuente del botón de presentación */
+        margin-top: 10px; /* Reducir el margen superior del botón de presentación */
+    }
+
+    .sobre__mi {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+        height: auto; /* Establecer la altura automática para la sección "Sobre mí" */
+    }
+
+    .sobre__mi--container {
+        margin-left: 0; /* Ajustar el margen izquierdo del contenedor "Sobre mí" */
+    }
+
+    .sobre__mi--title {
+        text-align: center;
+        width: 100%;
+        font-size: 24px; /* Reducir el tamaño de la fuente del título "Sobre mí" */
+    }
+
+    .sobre__mi--paragraph{
+        width: 100%;
+        margin: 0;
+    }
+
+    .estudios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .estudios__container{
+        font-size: 15px;
+    }
+
+    .proyectos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto; /* Establecer la altura automática para las secciones "Estudios" y "Proyectos" */
+    }
+
+    .estudios__title{
+        font-size: 24px;
+        margin: 0;
+    }
+    .proyectos__title {
+        font-size: 24px; /* Reducir el tamaño de la fuente del título de "Estudios" y "Proyectos" */
+    }
+
+    .estudios__list {
+        font-size: 10px; /* Reducir el tamaño de la fuente de la lista de estudios */
+    }
+
+    .certificados{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 20px auto;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 20px auto;
+    }
+
+    .certificados__title {
+        font-size: 24px; /* Reducir el tamaño de la fuente del título de "Certificados" */
+    }
+
+    .imagenes{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin: 20px 10px;
+        text-align: center;
+    }
+    .imagenes_1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    .Galery{
+        width: 100px;
+        height: auto;
+        margin: 10px 0;
+        font-size: 10px;
+    }
+    .Galery_1 {
+        width: 100px;
+        height: auto;
+        margin: 10px 0;
+        font-size: 10px;
+    }
+
+    .footer__links h3 {
+        font-size: 24px; /* Reducir el tamaño de la fuente del título de los enlaces del pie de página */
+    }
+
+    .social__link a {
+        font-size: 2em; /* Reducir el tamaño de la fuente de los enlaces sociales */
+        margin: 10px; /* Reducir el margen de los enlaces sociales */
+    }
+}
+
+
