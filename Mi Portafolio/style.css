@@ -39,6 +39,7 @@ section{
 }
 
 .section__nav{
+     z-index: 3;
      background-image: black;
      background-position: center;
      background-size: cover;
@@ -472,7 +473,8 @@ section{
     .estudios{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /*justify-content: center;
+        align-items: center;*/
         width: 100%;
         height: 100vh;
     }
@@ -484,8 +486,8 @@ section{
     .proyectos {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        background-repeat: no-repeat;
+        /*align-items: center;
+        background-repeat: no-repeat;*/
         max-width: 1200px;
         width: 100%;
         height: 100vh; /* Establecer la altura automática para las secciones "Estudios" y "Proyectos" */
@@ -493,7 +495,7 @@ section{
 
     .estudios__title{
         font-size: 24px;
-        margin: 0;
+        margin:0;
     }
     .proyectos__title {
         font-size: 24px; /* Reducir el tamaño de la fuente del título de "Estudios" y "Proyectos" */
@@ -506,8 +508,8 @@ section{
     .certificados{
         display: flex;
         flex-direction:column;
-        justify-content: center;
-        align-items: center;
+        /*justify-content: center;
+        align-items: center;*/
         height: 100vh;
         width: 100%;
         padding: 20px auto;
@@ -516,8 +518,8 @@ section{
     .proyectos{
         display: flex;
         flex-direction:column;
-        justify-content: center;
-        align-items: center;
+        /*justify-content: center;
+        align-items: center;*/
         height: 100vh;
         width: 100%;
         /*padding: 20px auto;*/
@@ -584,6 +586,10 @@ section{
 
 @media only screen and (max-width: 392px) {
 
+    .section__presentacion{
+        height: 75vh;
+    }
+
     .presentacion__content h1{
         font-size: 19px;
      }
@@ -608,9 +614,9 @@ section{
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: start;
-        justify-content:space-around;
-        text-align: center;
+        /*align-items: start;*/
+        justify-content:start;
+        /*text-align: center;*/
         font-size: 9px; /* Reducir el tamaño de la fuente del menú de navegación */
     }
 
@@ -637,7 +643,34 @@ section{
     }
 
     .proyectos{
+        display: flex;
+        /*justify-content:start;*/
+        border: 2px solid white;
         height: 100vh;
+    }
+
+    .certificados{
+        border: 2px solid white;
+    }
+
+    .estudios{
+        border: solid 2px white;
+    }
+
+    .estudios__title{
+        margin-top: 100px;
+    }
+
+    .sobre__mi--title{
+        margin-top: 100px;
+    }
+
+    .sobre__mi--paragraph{
+        margin-top: 50px;
+    }
+
+    .sobre__mi{
+        border: 2px solid white;
     }
 }
 
