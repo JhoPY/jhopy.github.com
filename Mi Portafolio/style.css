@@ -634,8 +634,10 @@ section{
    }
 
     .section__nav{
+        z-index: 4;
         width: 100%;
-        height: 100vh;
+        height: 80px;
+        border: none;
     }
 
     .btn-nav{
@@ -876,9 +878,8 @@ section{
     }
 
     section{
-        z-index: 4;
+        z-index: 3;
     }
-
 }
 
 
