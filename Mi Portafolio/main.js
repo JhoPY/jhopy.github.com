@@ -25,8 +25,6 @@ const abrir = document.getElementById("btn-nav1");
 
 const cerrar = document.getElementById("cerrar");
 
-const e = document.querySelector(".e");
-
 abrir.addEventListener("click", ()=>{
     nav.classList.add("visible");
     abrir.style.display = "none";
@@ -37,7 +35,37 @@ cerrar.addEventListener("click", ()=>{
     abrir.style.display = "flex";
 });
 
+const e = document.querySelector(".e");
+
+const e2 = document.querySelector(".e2");
+
+const e3 = document.querySelector(".e3");
+
+const e4 = document.querySelector(".e4");
+
+const e5 = document.querySelector(".e5");
+
 e.addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+e2.addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+e3.addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+e4.addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+e5.addEventListener("click", ()=>{
     nav.classList.remove("visible");
     abrir.style.display = "flex";
 });
