@@ -152,7 +152,7 @@ section{
 .btn__presentacion{
     cursor: pointer;
     color: white;
-    background: transparent;
+    background: wheat;
     border: none;
     border: 1px solid wheat;
     border-radius: 30px;
