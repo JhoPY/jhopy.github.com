@@ -48,10 +48,27 @@ section{
      justify-content: space-between;
      width: 100%;
      height: 90px;
-     border-bottom: 2px solid white;
+     border-bottom: 2px solid red;
      position: fixed;
 }
 
+.text__nav{
+    display: block;
+    padding: 20px;
+    margin: 0;
+    font-family: cursive;
+    text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+}
+
+.text__nav h2{
+    color: red;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.abrir-menu{
+    display: none;
+}
 
 .nav__list{
     display: flex;
@@ -83,14 +100,20 @@ section{
 }
 
 .text__nav{
+    z-index: 4;
     margin: 0;
     font-family: cursive;
     text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
 }
+
 .text__nav h2{
     color: red;
     padding-left: 20px;
     font-size: 20px;
+}
+
+.cerrar-menu{
+    display: none;
 }
 
 .section__presentacion{
@@ -265,6 +288,12 @@ section{
     height: 200px;
 }
 
+.caja:hover{
+    color: orange;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .proyectos{
     display: flex;
     flex-direction: column;
@@ -323,6 +352,23 @@ section{
 }
 
 .Galery_1:hover{
+    border: 1px solid orange;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.Galery_12{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+    width: 350px;
+}
+
+.Galery_12 img{
+    width: 100%;
+    height: auto;
+}
+
+.Galery_12:hover{
     border: 1px solid orange;
     transform: scale(1.5);
     cursor: pointer;
@@ -404,10 +450,23 @@ section{
         font-size: 9px; /* Reducir el tamaño de la fuente del menú de navegación */
     }
 
-    .text__nav h2 {
-        text-align: center;
-        font-size: 14px; /* Reducir el tamaño de la fuente del título de navegación */
+    .text__nav{
+        z-index: 3;
+        margin: 0;
+        font-family: cursive;
+        text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
     }
+    
+    .text__nav h2{
+        color: red;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    /*.text__nav h2 {
+        text-align: center;
+        font-size: 14px; 
+    }*/
 
     .section__presentacion {
         height: 100vh; /* Ajustar la altura de la sección de presentación */
@@ -560,6 +619,13 @@ section{
         font-size: 10px;
     }
 
+    .Galery_12 {
+        width: 100px;
+        height: auto;
+        margin: 10px 0;
+        font-size: 10px;
+    }
+
     .footer__links h3 {
         font-size: 24px; /* Reducir el tamaño de la fuente del título de los enlaces del pie de página */
     }
@@ -579,12 +645,130 @@ section{
     }
     
     .caja{
-        width: 100px;
+        width: 200px;
         height: 100px;
+    }
+
+    .caja:hover{
+        color: orange;
+        transform: scale(1.4);
+        cursor: pointer;
     }
 }
 
+@media only screen and (max-width: 450px){
+
+    .text__nav{
+        color: white;
+        display: block;
+        width: fit-content;
+    }
+
+    .section__nav{
+        align-items: start;
+        /*top: 20px;
+        right: 30px;*/
+   }
+
+    .section__nav{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .btn-nav{
+        padding: 0 30px;
+        width: fit-content;
+        height: 70px;
+        background-color: rgb(1, 1, 1,0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .abrir-menu{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+    .cerrar-menu{
+        background-color: transparent;
+        border: none;
+        color: white;
+        display: block;
+        padding: 20px 30px;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(1, 1, 1, 0.5);
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__list{
+        top: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        flex-direction: column;
+        align-items: end;
+        transform: none;
+    }
+
+    .nav__list li{
+        padding: 10px 20px;
+        width: 100%;
+        padding-right: 0;
+        border-top: 2px solid white;
+        font-size: 15px;
+    }
+
+    .nav__list li:hover{
+        transform: none;
+        padding-right: 0;
+        font-size: 15px;
+    }
+
+    .nav__list li a{
+        padding-right: 30px;
+        text-align: center;
+        color: white;
+        transform: scale(0.5);
+    }
+
+}
+
 @media only screen and (max-width: 392px) {
+
+    .text__nav{
+        margin: 0;
+        font-family: cursive;
+        text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+    }
+    
+    .text__nav h2{
+        color: red;
+        padding-left: 20px;
+        font-size: 10px;
+    }
 
     .section__presentacion{
         height: 75vh;
@@ -626,7 +810,7 @@ section{
 
     .text__nav h2 {
         display: none;
-    }
+    }*/
 
     .svg{
         margin-top: 100px;
