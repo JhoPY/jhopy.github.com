@@ -423,7 +423,7 @@ section{
     }
 
     .presentacion__content h1{
-       font-size: 60px;
+       font-size: 30px !important;
     }
 
     .presentacion__img {
