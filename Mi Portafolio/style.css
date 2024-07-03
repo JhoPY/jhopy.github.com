@@ -599,6 +599,10 @@ section{
 
 @media only screen and (max-width: 450px){
 
+    body {
+        font-size: 16px; 
+    }
+
     .section__presentacion{
         height: 75vh;
     }
@@ -631,12 +635,9 @@ section{
 
     .section__nav{
         align-items: start;
-   }
-
-    .section__nav{
         z-index: 4;
         width: 100%;
-        height: 80px;
+        height: 100px;
         border: none;
     }
 
@@ -667,6 +668,7 @@ section{
     }
 
     .nav{
+        height: 100vh;
         opacity: 0;
         visibility: hidden;
         display: flex;
@@ -721,7 +723,7 @@ section{
         transform: scale(0.5);
     }
 
-    /*.text__nav{
+    .text__nav{
         margin: 0;
         font-family: cursive;
         text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
@@ -731,7 +733,7 @@ section{
         color: red;
         padding-left: 20px;
         font-size: 20px;
-    }*/
+    }
 
     
 .Galery_1{
@@ -801,11 +803,12 @@ section{
     .text__nav h2{
         color: red;
         padding-left: 20px;
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .section__presentacion{
-        height: 75vh;
+        /*height: 75vh;*/
+        height: 100vh;
     }
 
     .presentacion__content h1{
