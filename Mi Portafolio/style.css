@@ -151,8 +151,8 @@ section{
 
 .btn__presentacion{
     cursor: pointer;
-    color: white;
-    background: wheat;
+    color: rgb(255, 255, 255);
+    background: yellow;
     border: none;
     border: 1px solid wheat;
     border-radius: 30px;
