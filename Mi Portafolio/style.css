@@ -854,7 +854,7 @@ section{
     color: white;
     text-shadow: 1px 2px 2px black, 0 0 25px black, 0 0 5px black;
     font-size: 20px;
-    /*margin: 15px;*/
+    margin: 15px;
 }
 
 .social__link1 a:hover{
