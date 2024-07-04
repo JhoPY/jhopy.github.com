@@ -111,6 +111,10 @@ section{
     font-size: 20px;
 }
 
+.social__link1{
+    display: none;
+}
+
 .cerrar-menu{
     display: none;
 }
@@ -351,20 +355,20 @@ section{
 }
 
 .container__footer{
-    display: flex;
+    /*display: flex;
     align-items: start;
-    flex-direction: row;
+    flex-direction: row;*/
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer__row{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: start;
+    /*align-items: start;*/
 }
 
 .footer__links h3{
@@ -394,7 +398,7 @@ section{
     transform: scale(1.4);
 }
 
-#contactForm{
+/*#contactForm{
     display: flex;
     flex-direction: column;
     /*justify-content: center;*/
@@ -426,7 +430,7 @@ section{
     border: 1px solid purple;
     color: black;
     outline: over;
-}
+}*/
 
 .social__link1{
     display: none;
@@ -439,7 +443,8 @@ section{
     }
 
     .section__nav {
-        height: 49px; 
+        position: fixed;
+        height: 70px !important; 
     }
 
     .nav__list {
@@ -970,10 +975,9 @@ section{
     }
 
     .footer__row{
-        margin-left: 10px;
-        width: 50%;
+        /*margin-left: 10px;*/
+        width: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -988,7 +992,7 @@ section{
     }
 
     .social__link a{
-        display: inline-block;
+        /*display: inline-block;*/
         margin: 20px 0;
         color: white;
         text-shadow: 1px 2px 2px black, 0 0 25px green, 0 0 5px green;
