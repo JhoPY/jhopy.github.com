@@ -10,7 +10,7 @@
 </head>
 <body>
 <main id="hero">
-    <video muted autoplay loop><source src="naturaleza5.mp4" type="video/mp4"></video>
+    <video muted autoplay loop><source autoplay muted playsinline loop src="naturaleza5.mp4" type="video/mp4"></video>
     <div class="capa"></div>
 
     <section class="section__nav">
@@ -136,6 +136,20 @@
                         </div>
                     </div>
                 </dic>
+                <form id="contactForm">
+                    <h2 class="formTil">Formulario de Contacto:</h2>
+                    <label for="nombre"></label>
+                    <input class="formText" type="text" id="nombre" name="nombre" required placeholder="Nombre"><br>
+            
+                    <label for="email"></label>
+                    <input class="formText" type="email" id="email" name="email" required placeholder="Gmail"><br>
+            
+                    <label for="mensaje" ></label>
+                    <textarea class="formText" id="mensaje" name="mensaje" rows="4" required placeholder="Mensaje"></textarea><br>
+            
+                    <input class="formText" type="submit" value="Enviar">
+                </form>
+                <div id="resultado"></div>
             </div>
         </footer>
     </section>

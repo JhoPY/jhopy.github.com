@@ -18,6 +18,35 @@ document.querySelector(".Galery_12").onclick = ()=>{
     open("https://ezequiel20051.github.io/css/Links/", "_blank")
 };
 
+const section = document.querySelector(".section__presentacion").addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+const section2 = document.querySelector(".sobre__mi").addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+const section3 = document.querySelector(".estudios").addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+const section4 = document.querySelector(".certificados").addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+const section5 = document.querySelector(".proyectos").addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+});
+
+const section6 = document.querySelector(".contacto").addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+    abrir.style.display = "flex";
+})
 
 const nav = document.getElementById("nav");
 
@@ -68,6 +97,26 @@ e4.addEventListener("click", ()=>{
 e5.addEventListener("click", ()=>{
     nav.classList.remove("visible");
     abrir.style.display = "flex";
+});
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('enviar_correo.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('resultado').innerText = data;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('resultado').innerText = 'Error al enviar el mensaje. Por favor, intenta de nuevo.';
+    });
 });
 
 

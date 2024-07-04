@@ -351,25 +351,32 @@ section{
 }
 
 .container__footer{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer__row{
+    width: 50%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .footer__links h3{
+    text-align: center;
+    /*width: 50%;*/
     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
     font-size: 3.5em;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .social__link{
+    /*width: 50%;*/
     text-align: center;
 }
 
@@ -385,6 +392,40 @@ section{
 .social__link a:hover{
     color: orange;
     transform: scale(1.4);
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: start;
+    width: 50%;
+    border: none;
+}
+
+.formTil{
+    text-align: start;
+    /*width: 50%;*/
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.formText{
+    border: none;
+    outline: none;
+    background-color: rgb(168, 154, 209);
+}
+
+.formText::placeholder{
+    color: black;
+}
+
+.formText:hover{
+    border: 1px solid purple;
+    color: black;
+    outline: over;
 }
 
 .social__link1{
@@ -926,6 +967,38 @@ section{
         border: 1px solid orange;
         transform: scale(1.1);
         cursor: pointer;
+    }
+
+    .footer__row{
+        margin-left: 10px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__links h3{
+        text-align: center;
+        /*width: 50%;*/
+        text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .social__link a{
+        display: inline-block;
+        margin: 20px 0;
+        color: white;
+        text-shadow: 1px 2px 2px black, 0 0 25px green, 0 0 5px green;
+        font-size: 1.5em;
+        margin-right: 20px;
+    }
+    
+    .social__link a:hover{
+        color: orange;
+        transform: scale(1.4);
     }
 }
 
