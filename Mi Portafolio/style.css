@@ -6,9 +6,12 @@
 body{
     font-family: arial;
     overflow:visible;
+    background-image: url(paisaje23.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-#hero{
+/*#hero{
     min-height: 100vh;
     position: relative;
 }
@@ -34,9 +37,9 @@ section{
     width: 100%;
     height: 100%;
     background-color: #1c1c1d;
-    /*opacity: 0.1;*/
+    opacity: 0.1;
     mix-blend-mode: overlay;
-}
+}*/
 
 .section__nav{
      z-index: 3;
@@ -74,7 +77,8 @@ section{
     display: flex;
     list-style: none;
     font-size: 20px;
-    text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+    /*text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;*/
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px blue;
 }
 
 .nav__list li{
@@ -135,7 +139,8 @@ section{
 }
 
 .presentacion__title{
-    text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;
+    /*text-shadow: 1px 2px 2px black, 0 0 25px red, 0 0 5px red;*/
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px blue;
     font-size: 2.5em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
@@ -169,7 +174,7 @@ section{
 .btn__presentacion--a{
     text-decoration: none;
     font-size: 20px;
-    color: rgb(192, 84, 84);
+    color: rgba(12, 93, 32, 0.735);
 }
 
 .sobre__mi{
@@ -189,7 +194,8 @@ section{
 .sobre__mi--title{
     margin-top: 100px;
     text-align: center;
-    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    /*text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;*/
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px blue;
     text-transform: uppercase;
     font-size: 3.5em;
 }
@@ -218,7 +224,8 @@ section{
     margin-top: 100px;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    /*text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;*/
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px blue;
     max-width: 50%;
     font-size: 3.5em;
 }
@@ -246,7 +253,8 @@ section{
     width: 100%;
     text-transform: uppercase;
     color: white;
-    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    /*text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;*/
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px blue;
     text-align: center;
     font-size: 3.5em;
 }
@@ -286,7 +294,7 @@ section{
     width: 100%;
     text-transform: uppercase;
     color: white;
-    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px blue;
     text-align: center;
     font-size: 3.5em;
 }
@@ -350,7 +358,7 @@ section{
 .footer{
     padding: 80px 0;
     margin: 0;
-    background-color: #242628;
+    background-color: hwb(117 0% 77% / 0.765);
     color: white;
 }
 
