@@ -69,6 +69,11 @@ section{
     font-size: 20px;
 }
 
+.nav__title{
+    color: green !important;
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(0, 255, 13), 0 0 5px rgb(0, 255, 64);
+}
+
 .abrir-menu{
     display: none;
 }
