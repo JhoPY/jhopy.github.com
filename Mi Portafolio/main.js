@@ -100,23 +100,4 @@ e5.addEventListener("click", ()=>{
 });
 
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const formData = new FormData(this);
-
-    fetch('enviar_correo.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('resultado').innerText = data;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('resultado').innerText = 'Error al enviar el mensaje. Por favor, intenta de nuevo.';
-    });
-});
-
 
