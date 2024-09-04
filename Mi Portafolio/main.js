@@ -1,3 +1,7 @@
+window.onload = function() {
+    document.getElementById('hero').style.display = 'block';
+};
+
 document.querySelector(".caja1").onclick = ()=>{
     open("https://developer.mozilla.org/es/docs/Web/HTML", "_blank");
 };
