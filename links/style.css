@@ -99,3 +99,9 @@ body{
     margin: 0;
 }
 
+@media (max-width: 400px){
+    .header{
+        max-width: 85%;
+    }
+}
+
