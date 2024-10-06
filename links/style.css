@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.header{
+    text-align: center;
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 0 45PX rgb(245, 36, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.joha__img{
+    margin: 50px 0 20px 0;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    box-shadow: 0 0 30px aqua;
+}
+
+.title{
+    text-align: center;
+    color: aqua;
+    text-transform: uppercase;
+    text-shadow: 0 0 25px aqua;
+}
+
+.list{
+    text-decoration: none;
+    list-style-type: none;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+    cursor: pointer;
+    text-shadow: 0 0 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+    padding: 40px 0;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.lila{
+    color: purple;
+}
+
+.twitch__img{
+    width: 20px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.naranja{
+    color: orange;
+}
+
+.instagram{
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.rojo{
+    color: red;
+}
+
+.youtube{
+    width: 20px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.celeste{
+    color: aqua;
+}
+
+.tiktok{
+    width: 20px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
