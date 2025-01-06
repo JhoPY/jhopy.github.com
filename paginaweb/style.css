@@ -1,0 +1,855 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    background-image: url(23.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.nav1{
+    display: none;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    background-color: black;
+    color:goldenrod;
+    list-style: none;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 200;
+    transition: transform 0.3s ease, padding 0.3s ease;
+}
+
+.header.shrink {
+    top: 0;
+    transform: scaleY(0.8);
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo--img{
+    display: none;
+}
+
+.abrir-menu{
+    display: none;
+}
+
+.cerrar-button{
+    display: none;
+}
+
+.logo{
+    margin-left: 15px;
+    padding: 0;
+    width: 130px;
+}
+
+.logo--container{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: baseline;
+}
+
+.logo--contain{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 0 36px;
+}
+
+.logo--title{
+text-align: start;
+color: white;
+padding: 0 35px;
+}
+
+.x{
+    color: goldenrod;
+}
+
+.title1{
+    font-weight: 900;
+}
+
+.title2{
+    padding: 0 0px;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+}
+
+.lista{
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.a{
+    color: goldenrod;
+}
+
+.a:hover{
+    color: white;
+}
+
+
+
+/* MAIN */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 75px; /* Ajusta la distancia desde abajo */
+    right: 75px; /* Ajusta la distancia desde la derecha */
+    z-index: 100; /* Asegúrate de que esté encima de otros elementos */
+    display: block;
+}
+
+.whatsapp-icon--svg:hover{
+    transform: scale(1.1);
+}
+
+.main{
+    margin-top: 25vh;
+    margin: 20px;
+}
+
+.capa1{
+    background-color: black;
+}
+
+.frase{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    background-image: url(WhatsApp\ Image\ 2025-01-03\ at\ 5.21.13\ AM.jpeg);
+    background-position:right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.conten{
+    font-family:'Courier New', Courier, monospace;
+    color: goldenrod;
+    width: 55%;
+    font-size: 20px;
+    position: relative;
+    z-index: 1; /* Para que el texto esté sobre la capa negra */
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.5;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 70px;
+}
+
+.frase-contain{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.productos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 150px;
+    column-gap: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-items: center;
+}
+
+/*.productos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content:space-around;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.9);
+    text-align: center;
+}*/
+
+.productos--title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 20px;
+    color: goldenrod;
+    background-color: black;
+    padding: 50px;
+}
+
+
+.productos2{
+    margin-top: 20px;
+}
+
+.img--productos{
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+.container--info{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.container--info:hover{
+    box-shadow: 0 10px 20px rgb(249, 249, 249);
+}
+
+.redes--sociales{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    justify-content:space-around;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.icons1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 3s ease;
+    transform-style: preserve-3d;
+}
+
+.icons1:hover {
+    animation: girar 2s forwards;
+}
+
+
+@keyframes girar {
+    100% {
+    transform: rotateY(360deg);
+    }
+}
+
+.icons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 3s ease;
+    transform-style: preserve-3d;
+}
+
+.icons2:hover {
+    animation: girar 2s forwards;
+}
+
+
+@keyframes girar {
+    100% {
+    transform: rotateY(360deg);
+    }
+}
+
+.icons3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 3s ease;
+    transform-style: preserve-3d;
+}
+
+.icons3:hover {
+    animation: girar 2s forwards;
+}
+
+
+@keyframes girar {
+    100% {
+    transform: rotateY(360deg);
+    }
+}
+
+.icons--tamaño{
+text-align: center;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.829);
+    justify-content: space-between;
+    width: 100%;
+    min-height: 40vh;
+    margin: 0;
+    padding: 0 400px;
+}
+
+.info--footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.title--footer{
+    font-size: 40px;
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.redes--footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.p-sobre--nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 0;
+    background-color: black;
+    z-index: 200;
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.sobre-nos{
+    font-size: 25px;
+    padding: 0 10px;
+    line-height: 1;
+    margin: 0;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 2008px) {
+    /* HEADER MOVIL */
+
+    .header{
+        width: 100%;
+        padding: 0 20px;
+        font-size: 30px;
+        transition: none;
+    }
+
+.header.shrink {
+    top: 0;
+    transform: scaleY(1);
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+    .logo{
+        display: none;
+        /*margin-left: 5px;*/
+        padding: 0;
+        width: 100px;
+    }
+
+
+    /* MAIN MOVIL */
+
+    .whatsapp-icon{
+        position: fixed;
+    }
+    .whatsapp-icon--svg{
+        width: 130px;
+        height: 130px;
+    }
+
+    .capa1{
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .frase{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        margin: auto;
+        background-image: url(WhatsApp\ Image\ 2025-01-03\ at\ 5.21.13\ AM.jpeg);
+        background-position:center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .conten{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family:'Courier New', Courier, monospace;
+        color: goldenrod;
+        width: 50%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1; /* Para que el texto esté sobre la capa negra */
+        text-align: center;
+        word-wrap: break-word;
+        line-height: 1.5;
+        /*top: 50%;
+        transform: translateY(-50%);*/
+        /*margin: 0 70px;*/
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .frase-contain{
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .productos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer{
+        padding: 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .info--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .redes--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .p-sobre--nos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 1108px) {
+    /* HEADER MOVIL */
+
+    .header{
+        width: 100%;
+        font-size: 25px;
+        padding: 0 10px;
+        height: 20vh;
+    }
+
+    .logo{
+        display: none;
+        /*margin-left: 5px;*/
+        padding: 0;
+        width: 100px;
+    }
+
+    .title2{
+        font-size: 25px;
+    }
+
+
+    /* MAIN MOVIL */
+
+    .whatsapp-icon{
+        position: fixed;
+    }
+    .whatsapp-icon--svg{
+        width: 130px;
+        height: 130px;
+    }
+
+    .capa1{
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .frase{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        margin: auto;
+        background-image: url(WhatsApp\ Image\ 2025-01-03\ at\ 5.21.13\ AM.jpeg);
+        background-position:center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .conten{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family:'Courier New', Courier, monospace;
+        color: goldenrod;
+        width: 50%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1; /* Para que el texto esté sobre la capa negra */
+        text-align: center;
+        word-wrap: break-word;
+        line-height: 1.5;
+        /*top: 50%;
+        transform: translateY(-50%);*/
+        /*margin: 0 70px;*/
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .frase-contain{
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .productos{
+        padding: 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 50px 0;
+        font-size: 15px;
+    }
+    .info--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .title--footer{
+        font-size: 30px;
+        font-weight: 900;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .redes--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .p-sobre--nos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+        margin: 0;
+        background-color: black;
+        z-index: 200;
+        border: 4px solid white;
+        border-radius: 20px;
+    }
+    
+    .sobre-nos{
+        font-size: 25px;
+        padding: 0 5px;
+        line-height: 1;
+        margin: 0;
+    }
+
+}
+
+
+
+@media (max-width: 808px) {
+    /* HEADER MOVIL */
+
+    .header{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .abrir-menu, .cerrar-button{
+        background-color: transparent;
+        color: white;
+        display: block;
+        font-size: 2.5rem;
+        border: 0;
+        cursor: pointer;
+    }
+    .cerrar-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 30px 30px;
+    }
+
+    .logo--img{
+        display: inline;
+    }
+
+    .nav{
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 300;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        transform: none;
+    }
+
+    .nav.visible, .l1.visible, .li2.visible{
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .header.shrink .nav {
+        height: 100vh; /* El menú no cambia de tamaño */
+        transform: none; /* Evitar efectos visuales no deseados */
+        padding: 2rem; /* Mantén el padding consistente */
+    }
+
+    .lista{
+        flex-direction: column;
+        align-items: end;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .logo--contain{
+        display: none;
+    }
+
+    .logo--container{
+        display: none;
+    }
+
+    /* MAIN MOVIL */
+
+    .whatsapp-icon{
+        position: fixed;
+    }
+    .whatsapp-icon--svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .capa1{
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .frase{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        margin: auto;
+        background-image: url(WhatsApp\ Image\ 2025-01-03\ at\ 5.21.13\ AM.jpeg);
+        background-position:center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .conten{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family:'Courier New', Courier, monospace;
+        color: goldenrod;
+        width: 100%;
+        font-size: 10px;
+        position: relative;
+        z-index: 1; /* Para que el texto esté sobre la capa negra */
+        text-align: center;
+        word-wrap: break-word;
+        line-height: 1.5;
+        /*top: 50%;
+        transform: translateY(-50%);*/
+        /*margin: 0 70px;*/
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .frase-contain{
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .productos--title{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        margin: 20px;
+        color: goldenrod;
+        background-color: black;
+        padding: 50px;
+    }
+    
+    
+    .productos2{
+        margin-top: 20px;
+    }
+    
+    .img--productos{
+        width: 100%;
+        max-width: 200px;
+        height: auto; /* Para mantener la proporción */
+        padding: 20px;
+    }
+    
+    .container--info{
+        width: 200px;
+        height: fit-content;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 50px 0;
+        font-size: 10px;
+    }
+    .info--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .title--footer{
+        font-size: 20px;
+        font-weight: 900;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .redes--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .p-sobre--nos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+        margin: 0;
+        background-color: black;
+        z-index: 200;
+        border: 4px solid white;
+        border-radius: 20px;
+    }
+    
+    .sobre-nos{
+        font-size: 15px;
+        padding: 0 5px;
+        line-height: 1;
+        margin: 0;
+    }
+}
